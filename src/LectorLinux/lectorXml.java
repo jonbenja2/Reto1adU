@@ -77,7 +77,7 @@ public class lectorXml {
 					
 			};
 
-				File file = new File("/home/jon/eclipse-workspace/Reto1adU/bin/LectorLinux/datos.xml");
+				File file = new File("/home/jon/eclipse-workspace/Reto1adU/datos.xml");
 				InputStream inputStream = new FileInputStream(file);
 				Reader reader = new InputStreamReader(inputStream, "UTF-8");
 				
@@ -89,7 +89,7 @@ public class lectorXml {
     	catch (Exception e) 
     	{
     		e.printStackTrace();
-		}
+    	}
     }}
 }
 
