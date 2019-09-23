@@ -1,18 +1,18 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <empresa>
     <empleado id="1">
-        <nombre>Jon</nombre>
-        <username>jose</username>
-        <password>321423</password>
+        <nombre>Alosha</nombre>
+        <username>A1o$4a</username>
+        <password>101010</password>
     </empleado>
     <empleado id="2">
-        <nombre>Daniel Pérez</nombre>
-        <username>dperez</username>
+        <nombre>Daniel Chisnenko</nombre>
+        <username>daniElMAQUINA</username>
         <password>433543</password>
     </empleado>
     <empleado id="3">
-        <nombre>José López</nombre>
-        <username>jlopez</username>
+        <nombre>Lander</nombre>
+        <username>LAGUEADO</username>
         <password>534534</password>
     </empleado>
 </empresa>
