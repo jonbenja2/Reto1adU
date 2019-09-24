@@ -1,4 +1,4 @@
-package Reto1adU;
+package src.main.java.Reto1adU;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -13,7 +13,7 @@ public class LectorDatosPorTeclado {
 	  LectorDeAlfabetico();
      
 	}
-	public static void LectorDeAlfabetico() {
+	public static boolean LectorDeAlfabetico() {
 		
 			scan = new Scanner(System.in);
 	        System.out.print("Introduce texto: ");
@@ -21,6 +21,7 @@ public class LectorDatosPorTeclado {
 	        boolean alfa = Pattern.matches("^[a-zA-Z0-9]*$", input);
 	        // Si son solo letras imprime "Alfabetico" si no imprime "No Alfabetico"
 	        System.out.println(alfa ? "Alfanumerico" : "No Alfanumerico"); 
+	        return alfa;
 	    
 	}
 		

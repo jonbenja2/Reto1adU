@@ -1,4 +1,4 @@
-package Reto1adU;
+package src.main.java.Reto1adU;
 import java.io.File;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -7,10 +7,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-
 public class lecturaXml {
 
-	public static void funcionDeLectorDeXML(String archivo) {
+	public static boolean funcionDeLectorDeXML(String archivo) {
 		
 		try {
 
@@ -31,12 +30,15 @@ public class lecturaXml {
 			Element element = (Element) node;
 			System.out.println("nombre: " + getValue("nombre", element));
 			System.out.println("nombre de usuario: " + getValue("username", element));
-			System.out.println("contraseña: " + getValue("password", element));
+			System.out.println("contrase�a: " + getValue("password", element));
+			
 			}
 			}
+			return true;
 			} catch (Exception ex) {
 			ex.printStackTrace();
 			}
+			return false;
 			}
 
 			private static String getValue(String tag, Element element) {
@@ -46,4 +48,5 @@ public class lecturaXml {
 			}
 
 
-}
+	}
+
